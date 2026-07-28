@@ -48,10 +48,10 @@
     while(feed.children.length>5)feed.removeChild(feed.lastChild);
     rev+=Math.round(amt);tx++;net+=Math.round(amt*0.53);
     var bi=Math.floor(Math.random()*3);b[bi]+=Math.round(amt);
-    var e;
-    if(e=document.getElementById('kpiRev'))e.textContent=money(rev);
-    if(e=document.getElementById('kpiTx'))e.textContent=tx.toLocaleString('en-US');
-    if(e=document.getElementById('kpiNet'))e.textContent=money(net);
+    function set(id,val){var el=document.getElementById(id);if(el){el.textContent=val;el.classList.remove('bump');void el.offsetWidth;el.classList.add('bump');}}
+    set('kpiRev',money(rev));
+    set('kpiTx',tx.toLocaleString('en-US'));
+    set('kpiNet',money(net));
     ['br1','br2','br3'].forEach(function(id,i){var el=document.getElementById(id);if(el)el.textContent=money(b[i])});
   }
   for(var i=0;i<4;i++)row();
