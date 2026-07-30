@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>POS 2.0 — Run every part of your business from one place</title>
+<title>ZelloPOS — Run every part of your business from one place</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Nastaliq+Urdu:wght@500;600&family=Archivo:wght@800;900&family=Archivo+Black&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
@@ -12,13 +12,13 @@
 
 <!-- ANNOUNCEMENT BAR -->
 <div class="ann-bar">
-  <span class="ann-text">New: POS 2.0 is here. Scale support, your own language, and it keeps working with no internet — in every plan.</span>
+  <span class="ann-text">ZelloPOS ab live hai. Bijli jaye ya internet, dukaan chalti rahegi. Har plan mein shamil.</span>
   <a class="ann-link" href="all-features.html">See what's new →</a>
 </div>
 <nav class="nav">
   <a class="nav-logo" href="index.html">
-    <div class="nav-mark">P</div>
-    <span class="nav-name">POS <span>2.0</span></span>
+    <div class="nav-mark">Z</div>
+    <span class="nav-name">Zello<span>POS</span></span>
   </a>
   <div class="nav-links">
     <div class="nav-item"><a href="#">Business type</a>
@@ -61,7 +61,8 @@
       </div>
     </div>
   </div>
-  <div class="nav-right">
+  <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    <div class="nav-right">
     <a class="btn-nav-ghost" href="login.html" style="display:inline-block">Login</a>
     <a class="btn-nav-cta" href="free-trial.html" style="display:inline-block">Start free trial</a>
   </div>
@@ -70,11 +71,11 @@
 <!-- HERO -->
 <section class="hero">
   <div class="hero-eyebrow"><span class="hero-dot"></span>Cloud POS · Every business · Every market</div>
-  <h1 class="wide-hero">Sales are booming.<br><span class="blue">But where is the profit going?</span></h1>
+  <h1 class="wide-hero">Sale to bohat hai.<br><span class="blue">Munafa kahan gaya?</span></h1>
   <div class="urdu-line">بِکری تو خوب ہو رہی ہے… مگر منافع کہاں جا رہا ہے؟</div>
-  <p class="hero-sub">One simple system for your sales, stock, staff, customers and shops. Everything in one place, so you always know where your money is.</p>
+  <p class="hero-sub">Sale, stock, staff, customers aur saari branches — sab ek jagah. Din ke end pe aapko andaza nahi, hisaab milta hai.</p>
   <div class="hero-actions">
-    <a class="btn-hero-cta" href="free-trial.html" style="display:inline-block">Start free — no card needed</a>
+    <a class="btn-hero-cta" href="free-trial.html" style="display:inline-block">Free shuru karein — card nahi chahiye</a>
     <a class="btn-hero-demo" href="book-demo.html" style="display:inline-flex"><svg width="15" height="15" viewBox="0 0 15 15" fill="none"><circle cx="7.5" cy="7.5" r="7" stroke="currentColor" stroke-width="1.2"/><path d="M6 4.8L10.5 7.5L6 10.2V4.8Z" fill="currentColor"/></svg>
       Watch it in action</a>
   </div>
@@ -88,7 +89,7 @@
   <div class="hero-img-wrap">
     <div class="hero-float left">
       <div class="hf-label">Revenue today</div>
-      <div class="hf-val">$24,810</div>
+      <div class="hf-val">Rs 248,100</div>
       <div class="hf-change">↑ 18% vs yesterday</div>
     </div>
     <div class="hero-float right">
@@ -99,15 +100,15 @@
     <div class="hero-img-main dash" aria-label="Live business analytics demonstration">
   <div class="dash-top">
     <div class="dash-dot" style="background:#fda4af"></div><div class="dash-dot" style="background:#fcd34d"></div><div class="dash-dot" style="background:#86efac"></div>
-    <span class="dash-title">POS 2.0 · BUSINESS ANALYTICS</span>
+    <span class="dash-title">ZelloPOS · BUSINESS ANALYTICS</span>
     <span class="dash-live">LIVE</span>
   </div>
   <div class="dash-body">
     <div class="dash-main">
       <div class="dash-kpis">
-        <div class="kpi"><div class="kpi-l">Revenue today</div><div class="kpi-v" id="kpiRev">$24,810</div><div class="kpi-c">↑ 18% vs yesterday</div></div>
+        <div class="kpi"><div class="kpi-l">Revenue today</div><div class="kpi-v" id="kpiRev">Rs 248,100</div><div class="kpi-c">↑ 18% vs yesterday</div></div>
         <div class="kpi"><div class="kpi-l">Transactions</div><div class="kpi-v" id="kpiTx">1,284</div><div class="kpi-c">↑ 6% vs yesterday</div></div>
-        <div class="kpi"><div class="kpi-l">Net profit</div><div class="kpi-v" id="kpiNet">$13,160</div><div class="kpi-c">Live P&amp;L</div></div>
+        <div class="kpi"><div class="kpi-l">Net profit</div><div class="kpi-v" id="kpiNet">Rs 131,600</div><div class="kpi-c">Live P&amp;L</div></div>
       </div>
       <div class="dash-chart">
         <svg viewBox="0 0 600 180" preserveAspectRatio="none">
@@ -129,9 +130,9 @@
       <div class="side-h">Live transactions</div>
       <div class="feed" id="txFeed"></div>
       <div class="branches">
-        <div class="br"><div class="br-n">New York</div><div class="br-v" id="br1">$12,400</div><div class="br-on">● Online</div></div>
-        <div class="br"><div class="br-n">London</div><div class="br-v" id="br2">$9,800</div><div class="br-on">● Online</div></div>
-        <div class="br"><div class="br-n">Dubai</div><div class="br-v" id="br3">$2,610</div><div class="br-on">● Online</div></div>
+        <div class="br"><div class="br-n">Lahore</div><div class="br-v" id="br1">Rs 124,000</div><div class="br-on">● Online</div></div>
+        <div class="br"><div class="br-n">Karachi</div><div class="br-v" id="br2">Rs 98,000</div><div class="br-on">● Online</div></div>
+        <div class="br"><div class="br-n">Islamabad</div><div class="br-v" id="br3">Rs 26,100</div><div class="br-on">● Online</div></div>
       </div>
     </div>
   </div>
@@ -140,16 +141,64 @@
 </section>
 <section class="howto"><div class="howto-inner">
 <div class="howto-title"><span>How it works</span>Live in 30 minutes</div>
-<div class="hstep"><div class="hstep-n">1</div><div><h4>Create your account</h4><p>Sign up with your phone. Pick your business type and get sensible defaults.</p></div></div>
-<div class="hstep"><div class="hstep-n">2</div><div><h4>Add your products</h4><p>Type, import a spreadsheet, or scan barcodes as you go.</p></div></div>
-<div class="hstep"><div class="hstep-n">3</div><div><h4>Take your first sale</h4><p>Sell, print, done. Your live dashboard starts filling immediately.</p></div></div>
+<div class="hstep"><div class="hstep-n">1</div><div><h4>Create your account</h4><p>Apna phone number dein. Karobar ka type chunein, baaki hum set kar dete hain.</p></div></div>
+<div class="hstep"><div class="hstep-n">2</div><div><h4>Add your products</h4><p>Type karein, Excel se import karein, ya barcode scan karte jayein.</p></div></div>
+<div class="hstep"><div class="hstep-n">3</div><div><h4>Take your first sale</h4><p>Bechein, parchi nikaalein, bas. Dashboard usi waqt bharna shuru.</p></div></div>
 </div></section>
 <section class="clients"><div class="clients-inner">
   <div class="clients-head">
-    <div class="eyebrow">Trusted by businesses that serve thousands every day</div>
+    <div class="eyebrow">Pakistan ke un karobaron ka bharosa jo rozana hazaron logon ko serve karte hain</div>
     <div class="urdu-sub" style="margin-top:6px">ان کاروباروں کا بھروسہ جو روزانہ ہزاروں گاہکوں کو سروس دیتے ہیں۔</div>
   </div>
   <div class="marquee"><div class="marquee-track"><div class="client-logo"><span>Chief Burger</span></div><div class="client-logo"><span>Pizza Box</span></div><div class="client-logo"><span>Jans Deli</span></div><div class="client-logo"><span>Butt Karahi</span></div><div class="client-logo"><span>Al Maidah</span></div><div class="client-logo"><span>Shiraz</span></div><div class="client-logo"><span>Doner Kabab</span></div><div class="client-logo"><span>Mr Cod</span></div><div class="client-logo"><span>Piyali</span></div><div class="client-logo"><span>Chief Burger</span></div><div class="client-logo"><span>Pizza Box</span></div><div class="client-logo"><span>Jans Deli</span></div><div class="client-logo"><span>Butt Karahi</span></div><div class="client-logo"><span>Al Maidah</span></div><div class="client-logo"><span>Shiraz</span></div><div class="client-logo"><span>Doner Kabab</span></div><div class="client-logo"><span>Mr Cod</span></div><div class="client-logo"><span>Piyali</span></div></div></div>
+</div></section>
+<section class="section alt"><div class="section-inner">
+<div class="center">
+  <div class="eyebrow">Pakistan ke liye</div>
+  <h2 class="section-h2">Yahan ka karobar<br>yahan ke masail.</h2>
+  <div class="urdu-sub">جو مسئلے یہاں روز آتے ہیں، ہم نے وہی حل کیے ہیں۔</div>
+  <p class="section-sub">Bahar ka software bahar ke masail solve karta hai. ZelloPOS Pakistan mein bana, Pakistan ke liye.</p>
+</div>
+<div class="grid-3">
+  <div class="card">
+    <div class="card-icon">⚡</div>
+    <h3>Bijli gayi? Dukaan chalti rahegi.</h3>
+    <p>Load-shedding aur internet band hona yahan rozana ki baat hai. ZelloPOS bina internet ke poora chalta hai — bill, stock, sab kuch. Connection wapis aate hi khud sync ho jata hai. Ek sale bhi zaya nahi.</p>
+    <a class="card-link" href="offline-mode.html">Offline mode dekhein →</a>
+  </div>
+  <div class="card">
+    <div class="card-icon">🔒</div>
+    <h3>Har sale par naam. Har discount ka hisaab.</h3>
+    <p>Kaun ne kya becha, kis ne discount diya, kis ne bill void kiya — sab record hota hai. Cash counter par shak ki gunjaish khatam. Yeh sawal ab poochne nahi parte.</p>
+    <a class="card-link" href="staff-commissions.html">Staff tracking dekhein →</a>
+  </div>
+  <div class="card">
+    <div class="card-icon">📊</div>
+    <h3>Sale nahi — munafa dekhein.</h3>
+    <p>Counter chal raha hai lekin paisa bach nahi raha? ZelloPOS har item ki cost aur sale dono jorta hai, to aapko rozana asli munafa nazar aata hai. Maheene ke aakhir ka intezaar nahi.</p>
+    <a class="card-link" href="analytics-reporting.html">Live munafa dekhein →</a>
+  </div>
+</div>
+<div class="grid-3" style="margin-top:20px">
+  <div class="card">
+    <div class="card-icon">🌐</div>
+    <h3>Urdu mein bhi chalta hai.</h3>
+    <p>Aapka cashier jis zaban mein comfortable hai, screen usi mein. Parchi customer ki zaban mein, kitchen ticket kitchen ki zaban mein. Training ka waqt aadha.</p>
+    <a class="card-link" href="multi-language.html">Zaban settings →</a>
+  </div>
+  <div class="card">
+    <div class="card-icon">🏢</div>
+    <h3>Saari branches, ek screen par.</h3>
+    <p>Lahore, Karachi, Islamabad — sab ka hisaab ek jagah, live. Roz phone kar ke poochne ki zaroorat nahi ke aaj kitni sale hui.</p>
+    <a class="card-link" href="multi-branch.html">Multi-branch dekhein →</a>
+  </div>
+  <div class="card">
+    <div class="card-icon">💬</div>
+    <h3>Masla ho to WhatsApp karein.</h3>
+    <p>Ticket system mein phansne ki zaroorat nahi. Seedha WhatsApp par message karein, jawab insaan se milega — aur usi zaban mein jo aap bolte hain.</p>
+    <a class="card-link" href="help-support.html">Support dekhein →</a>
+  </div>
+</div>
 </div></section>
 
 <!-- MARQUEE -->
@@ -259,7 +308,7 @@
       </div>
       <div class="platform-cta-row">
         <a class="btn-platform-cta" href="free-trial.html" style="display:inline-block">Start free trial</a>
-        <a class="btn-platform-ghost" href="book-demo.html" style="display:inline-block">Book a demo</a>
+        <a class="btn-platform-ghost" href="book-demo.html" style="display:inline-block">Demo book karein</a>
       </div>
     </div>
 
@@ -380,9 +429,9 @@
       <div class="tp-screen">
         <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=700&q=80&auto=format&fit=crop" alt="Analytics and reporting dashboard" />
         <div class="tp-screen-overlay">
-          <div class="tpo-row"><span class="tpo-name">Gross revenue</span><span class="tpo-val">$24,810</span></div>
+          <div class="tpo-row"><span class="tpo-name">Gross revenue</span><span class="tpo-val">Rs 248,100</span></div>
           <div class="tpo-row"><span class="tpo-name">Cost of goods</span><span class="tpo-red">–$7,940</span></div>
-          <div class="tpo-row"><span class="tpo-name" style="font-weight:700">Net profit</span><span class="tpo-good" style="font-size:15px">$13,160</span></div>
+          <div class="tpo-row"><span class="tpo-name" style="font-weight:700">Net profit</span><span class="tpo-good" style="font-size:15px">Rs 131,600</span></div>
         </div>
       </div>
     </div>
@@ -403,9 +452,9 @@
       <div class="tp-screen">
         <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=700&q=80&auto=format&fit=crop" alt="Multi-branch business overview" />
         <div class="tp-screen-overlay">
-          <div class="tpo-row"><span class="tpo-name">Branch 1 — New York</span><span class="tpo-good">$12,400</span></div>
-          <div class="tpo-row"><span class="tpo-name">Branch 2 — London</span><span class="tpo-good">$9,800</span></div>
-          <div class="tpo-row"><span class="tpo-name">Branch 3 — Dubai</span><span class="tpo-warn">$2,610 ↓</span></div>
+          <div class="tpo-row"><span class="tpo-name">Branch 1 — Lahore</span><span class="tpo-good">Rs 124,000</span></div>
+          <div class="tpo-row"><span class="tpo-name">Branch 2 — Karachi</span><span class="tpo-good">Rs 98,000</span></div>
+          <div class="tpo-row"><span class="tpo-name">Branch 3 — Islamabad</span><span class="tpo-warn">Rs 26,100 ↓</span></div>
         </div>
       </div>
     </div>
@@ -421,7 +470,7 @@
         <h2 class="section-h2">One system.<br>Every kind of shop.</h2>
         <div class="urdu-sub">ہر قسم کی دکان کے لیے ایک ہی سسٹم۔</div>
       </div>
-      <p class="section-sub">One shop or a hundred, POS 2.0 fits the way you already work. Every kind of business gets exactly the tools it needs.</p>
+      <p class="section-sub">Ek dukaan ho ya pachaas — ZelloPOS aapke tareeqe se chalta hai, aapko badalna nahi parta.</p>
     </div>
     <div class="ind-grid">
       <a class="ind-card" href="full-service-restaurants.html">
@@ -482,8 +531,8 @@
     <div class="excl-top">
       <div class="excl-top-text">
         <div class="eyebrow">What sets us apart</div>
-        <h2 class="section-h2" style="color:#fff">The things your old POS could never do.</h2>
-        <p>Not fancy words for a brochure. Real tools we built because shopkeepers asked for them and kept hearing “no.”</p>
+        <h2 class="section-h2" style="color:#fff">Woh cheezein jo purana system kabhi nahi kar saka.</h2>
+        <p>Brochure ki baatein nahi. Yeh sab isliye banaya kyunke dukaandaron ne maanga aur har jagah se jawab mila: "yeh nahi ho sakta."</p>
       </div>
       <div class="excl-top-img">
         <img
@@ -546,7 +595,7 @@
       <div class="test-content">
         <div class="eyebrow">What operators say</div>
         <div class="test-stat-num">47%</div>
-        <div class="test-stat-label">average revenue increase reported in the first year on POS 2.0</div>
+        <div class="test-stat-label">average revenue increase reported in the first year on ZelloPOS</div>
         <blockquote class="test-quote">"For the first time, I could see what was actually happening in every branch without calling anyone. That alone was worth switching."</blockquote>
         <p class="test-attr"><strong>Operations Director</strong> · Multi-location retail group · 12 locations globally</p>
         <div class="test-cta-row">
@@ -561,7 +610,7 @@
 <section class="proof-section">
   <div class="proof-inner">
     <div class="eyebrow">Proof it works</div>
-    <h2 class="section-h2">Real shops. Real results.</h2>
+    <h2 class="section-h2">Asli dukaanein. Asli hisaab.</h2>
     <div class="urdu-sub">اصل دکانیں، اصل نتیجے۔</div>
     <div class="proof-grid">
       <div class="proof-card">
@@ -569,7 +618,7 @@
         <div class="proof-card-body">
           <div class="proof-card-stat">80%</div>
           <div class="proof-card-title">Less time spent on purchase orders</div>
-          <div class="proof-card-text">A multi-location retail group cut PO processing time from a full day to under two hours using POS 2.0 supplier management and auto-matching.</div>
+          <div class="proof-card-text">A multi-location retail group cut PO processing time from a full day to under two hours using ZelloPOS supplier management and auto-matching.</div>
           <a class="proof-card-link" href="customer-stories.html">Read the story →</a>
         </div>
       </div>
@@ -578,7 +627,7 @@
         <div class="proof-card-body">
           <div class="proof-card-stat">34%</div>
           <div class="proof-card-title">Faster checkout during peak service</div>
-          <div class="proof-card-text">A quick service chain reduced average transaction time by a third after moving from a legacy system to POS 2.0 across all 9 locations.</div>
+          <div class="proof-card-text">A quick service chain reduced average transaction time by a third after moving from a legacy system to ZelloPOS across all 9 locations.</div>
           <a class="proof-card-link" href="customer-stories.html">Read the story →</a>
         </div>
       </div>
@@ -587,7 +636,7 @@
         <div class="proof-card-body">
           <div class="proof-card-stat">100%</div>
           <div class="proof-card-title">Reduction in expired stock write-offs</div>
-          <div class="proof-card-text">A pharmacy chain eliminated expired product losses entirely after implementing POS 2.0 batch-level expiry tracking and automated alerts.</div>
+          <div class="proof-card-text">A pharmacy chain eliminated expired product losses entirely after implementing ZelloPOS batch-level expiry tracking and automated alerts.</div>
           <a class="proof-card-link" href="customer-stories.html">Read the story →</a>
         </div>
       </div>
@@ -647,25 +696,25 @@
 <div class="center"><div class="eyebrow">Pricing</div>
 <h2 class="section-h2">Simple pricing. Everything included.</h2>
 <div class="urdu-sub">سادہ قیمت۔ سب کچھ شامل۔</div>
-<p class="section-sub">One monthly price per shop. Every main feature in every plan. 7 days free, no card needed.</p></div>
+<p class="section-sub">Ek shop, ek maheene ki fees. Koi chhupa hua charge nahi. 7 din free — card ki zaroorat nahi.</p></div>
 <div class="plans"><div class="plan">
-  <h3>Starter</h3><div class="plan-for">One location.</div>
-  <div class="plan-price">$29<span> /mo</span></div><div class="plan-per">per location</div>
+  <h3>Starter</h3><div class="plan-for">Ek dukaan ke liye.</div>
+  <div class="plan-price">Rs 2,500<span> /mo</span></div><div class="plan-per">per shop / maheena</div>
   <div class="checks"><div class="check"><b>✓</b><span>1 register, 5 staff accounts</span></div><div class="check"><b>✓</b><span>Sales, inventory and offline mode</span></div><div class="check"><b>✓</b><span>CRM & loyalty</span></div><div class="check"><b>✓</b><span>Email support</span></div></div>
   <a class="btn-plan" href="free-trial.html" style="display:block;text-align:center">Start free trial</a>
 </div><div class="plan featured"><div class="plan-badge">Most popular</div>
-  <h3>Growth</h3><div class="plan-for">Growing businesses.</div>
-  <div class="plan-price">$79<span> /mo</span></div><div class="plan-per">per location</div>
+  <h3>Growth</h3><div class="plan-for">Barhte hue karobar ke liye.</div>
+  <div class="plan-price">Rs 6,500<span> /mo</span></div><div class="plan-per">per shop / maheena</div>
   <div class="checks"><div class="check"><b>✓</b><span>3 registers, 20 staff accounts</span></div><div class="check"><b>✓</b><span>Everything in Starter</span></div><div class="check"><b>✓</b><span>Commissions, scale integration, live P&L</span></div><div class="check"><b>✓</b><span>Multi-branch dashboard</span></div><div class="check"><b>✓</b><span>Priority support</span></div></div>
   <a class="btn-plan solid" href="free-trial.html" style="display:block;text-align:center">Start free trial</a>
 </div><div class="plan">
-  <h3>Enterprise</h3><div class="plan-for">Chains and franchises.</div>
-  <div class="plan-price">Custom</div><div class="plan-per">volume pricing</div>
+  <h3>Enterprise</h3><div class="plan-for">Chains aur franchise ke liye.</div>
+  <div class="plan-price">Custom</div><div class="plan-per">branches ke hisaab se</div>
   <div class="checks"><div class="check"><b>✓</b><span>Unlimited branches and registers</span></div><div class="check"><b>✓</b><span>Everything in Growth</span></div><div class="check"><b>✓</b><span>API access</span></div><div class="check"><b>✓</b><span>Dedicated account manager, 24/7 SLA</span></div></div>
   <a class="btn-plan" href="enterprise-pricing.html" style="display:block;text-align:center">Talk to sales</a>
 </div></div>
 </div></section>
-<section class="section alt"><div class="section-inner"><div class="center"><div class="eyebrow">Questions</div><h2 class="section-h2">The short version</h2><p class="section-sub"></p></div><div class="faq"><details><summary>Is the free trial really free?</summary><p>Yes. Seven days, full functionality, no card required. If you do nothing at the end, nothing is charged.</p></details><details><summary>Can I change or cancel my plan?</summary><p>Any time. Upgrades apply immediately, downgrades and cancellations at the next billing cycle.</p></details><details><summary>Are there setup or hardware fees?</summary><p>No. POS 2.0 runs on standard tablets, PCs and common receipt printers you may already own.</p></details></div></div></section>
+<section class="section alt"><div class="section-inner"><div class="center"><div class="eyebrow">Sawalat</div><h2 class="section-h2">The short version</h2><p class="section-sub"></p></div><div class="faq"><details><summary>Is the free trial really free?</summary><p>Yes. Seven days, full functionality, no card required. If you do nothing at the end, nothing is charged.</p></details><details><summary>Can I change or cancel my plan?</summary><p>Any time. Upgrades apply immediately, downgrades and cancellations at the next billing cycle.</p></details><details><summary>Are there setup or hardware fees?</summary><p>No. ZelloPOS runs on standard tablets, PCs and common receipt printers you may already own.</p></details></div></div></section>
 <section class="cta-section">
   <div class="cta-inner">
     <div class="cta-text">
@@ -680,7 +729,7 @@
     <div class="cta-image">
       <img
         src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=600&q=80&auto=format&fit=crop"
-        alt="Business owner using POS 2.0 on a tablet"
+        alt="Business owner using ZelloPOS on a tablet"
       />
     </div>
   </div>
@@ -692,8 +741,8 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <div class="footer-brand-logo">
-          <div class="fb-mark">P</div>
-          <span class="fb-name">POS <span>2.0</span></span>
+          <div class="fb-mark">Z</div>
+          <span class="fb-name">Zello<span>POS</span></span>
         </div>
         <p>The complete cloud POS and business management platform built for every business type, every market and every scale.</p>
         <div class="footer-socials">
@@ -739,7 +788,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <span class="footer-copy">© 2026 POS 2.0 · eRetailPoint · All rights reserved</span>
+      <span class="footer-copy">© 2026 ZelloPOS · eRetailPoint · All rights reserved</span>
       <div class="footer-legal">
         <a href="privacy.html">Privacy</a>
         <a href="terms.html">Terms</a>
@@ -759,7 +808,7 @@ function switchTab(idx, btn) {
 </script>
 <a class="wa-float" href="https://wa.me/923000000000?text=Hi%2C%20I%27m%20interested%20in%20POS%202.0" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
 <svg viewBox="0 0 32 32"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.6.8 5 2.2 7L4 29l7.2-2.1c1.9 1 4 1.6 6.3 1.6h.5c6.6 0 12-5.4 12-12S22.6 3 16 3zm7 17c-.3.8-1.7 1.6-2.4 1.7-.6.1-1.4.2-4.4-.9-3.7-1.5-6-5.2-6.2-5.5-.2-.3-1.5-2-1.5-3.8s.9-2.7 1.3-3c.3-.4.7-.5 1-.5h.7c.2 0 .5-.1.8.6.3.8 1.1 2.7 1.2 2.9.1.2.2.4 0 .7-.1.3-.2.4-.4.7l-.6.7c-.2.2-.4.4-.2.8.2.4 1 1.7 2.2 2.7 1.5 1.4 2.8 1.8 3.2 2 .4.2.6.1.9-.1.2-.3 1-1.2 1.3-1.6.3-.4.5-.3.9-.2.4.1 2.2 1 2.6 1.2.4.2.6.3.7.5.1.2.1.9-.1 1.6z"/></svg></a>
-<div class="sticky-cta"><a class="sc-ghost" href="book-demo.html">Book a demo</a><a class="sc-main" href="free-trial.html">Start free trial</a></div>
+<div class="sticky-cta"><a class="sc-ghost" href="book-demo.html">Demo book karein</a><a class="sc-main" href="free-trial.html">Start free trial</a></div>
 <script src="site.js" defer></script>
 </body>
 </html>

@@ -12,7 +12,7 @@
     img.addEventListener('error',function(){
       var f=document.createElement('div');f.className='img-fallback';
       var h=img.getAttribute('height')||img.clientHeight;f.style.height=(h&&h>40?h:280)+'px';
-      f.innerHTML='<span>▦ POS 2.0</span>';
+      f.innerHTML='<span>▦ ZelloPOS</span>';
       if(img.parentNode)img.parentNode.replaceChild(f,img);
     });
     if(img.complete&&img.naturalWidth===0){img.dispatchEvent(new Event('error'))}
@@ -33,13 +33,13 @@
   var feed=document.getElementById('txFeed');
   if(!feed)return;
   var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var rev=24810,tx=1284,net=13160,b=[12400,9800,2610];
+  var rev=248100,tx=1284,net=131600,b=[124000,98000,26100];
   var kinds=[['In-store','#10'],['Online','#10'],['Delivery','#10'],['Self-serve','#10']];
   var n=1042;
-  function money(x){return '$'+x.toLocaleString('en-US')}
+  function money(x){return 'Rs '+x.toLocaleString('en-US')}
   function row(){
     var k=kinds[Math.floor(Math.random()*kinds.length)];
-    var amt=Math.round(8+Math.random()*140)+Math.round(Math.random()*99)/100;
+    var amt=Math.round(250+Math.random()*3500);
     n++;
     var d=document.createElement('div');d.className='tx';
     d.innerHTML='<div><div class="tx-l">'+k[0]+' · #'+n+'</div><div class="tx-s">just now</div></div>'+
@@ -56,4 +56,29 @@
   }
   for(var i=0;i<4;i++)row();
   if(!reduce){setInterval(row,2600);}
+})();
+
+// Hamburger menu toggle
+(function(){
+  var btn=document.querySelector('.nav-toggle');
+  var links=document.querySelector('.nav-links');
+  if(!btn||!links)return;
+  btn.addEventListener('click',function(){
+    btn.classList.toggle('open');
+    links.classList.toggle('open');
+  });
+  // close on link tap
+  links.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click',function(){
+      btn.classList.remove('open');
+      links.classList.remove('open');
+    });
+  });
+  // close on outside tap
+  document.addEventListener('click',function(e){
+    if(!e.target.closest('.nav')){
+      btn.classList.remove('open');
+      links.classList.remove('open');
+    }
+  });
 })();
